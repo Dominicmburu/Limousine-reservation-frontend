@@ -101,7 +101,7 @@ const FleetPage = () => {
                   className="bg-gradient-to-b from-white to-gray-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
                 >
                   <img
-                    src={`./images/${vehicle.image}`}
+                    src={`./image/${vehicle.image}`}
                     alt={vehicle.name}
                     className="w-full h-48 object-cover rounded-t-lg"
                   />
