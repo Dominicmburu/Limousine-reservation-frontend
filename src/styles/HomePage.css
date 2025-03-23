@@ -1,0 +1,25 @@
+/* @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.overflow-hidden {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.scrolling-images {
+    display: flex;
+    animation: scroll 10s linear infinite;
+  }
+  
+  /* Image styles */
+  .scrolling-images img {
+    margin-right: 1rem;
+  } */
