@@ -101,7 +101,7 @@ const FleetPage = () => {
                   className="bg-gradient-to-b from-white to-gray-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
                 >
                   <img
-                    src={vehicle.image || images.defaultCarImage} // Fallback to a default image if none exists
+                    src={`./images/${vehicle.image}`}
                     alt={vehicle.name}
                     className="w-full h-48 object-cover rounded-t-lg"
                   />
