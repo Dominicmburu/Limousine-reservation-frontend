@@ -14,6 +14,7 @@ const LoginPage = () => {
   const [otp, setOtp] = useState('');  // To store OTP after it is sent
   const [isOtpSent, setIsOtpSent] = useState(false);  // To check if OTP is sent
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
@@ -26,6 +27,7 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setMessage({ text: '', type: '' });
+    setLoading(true);
 
     try {
       const response = await fetch(`${BASE_API}/auth/login`, {
@@ -38,7 +40,7 @@ const LoginPage = () => {
       const data = await response.json();
 
       console.log('login adata:', data);
-      
+
       if (response.ok) {
         localStorage.setItem('token', data.token);
 
@@ -49,11 +51,14 @@ const LoginPage = () => {
       }
     } catch (err) {
       setMessage({ text: err.message, type: 'error' });
+    } finally {
+      setLoading(false);
     }
   };
 
   const handleOtpSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       const response = await fetch(`${BASE_API}/auth/verify-otp`, {
         method: 'POST',
@@ -75,6 +80,8 @@ const LoginPage = () => {
       }
     } catch (err) {
       setMessage({ text: err.message, type: 'error' });
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -131,9 +138,10 @@ const LoginPage = () => {
             />
           )}
 
-          <button type="submit" className="bg-primary text-white p-2 rounded w-full">
-            {isOtpSent ? 'Verify OTP' : 'Login'}
+          <button type="submit" className="bg-primary text-white p-2 rounded w-full" disabled={loading}>
+            {loading ? 'Processing...' : isOtpSent ? 'Verify OTP' : 'Login'}
           </button>
+
           <p className="mt-4 text-center">
             Don't have an account? <a href="/signup" className="text-primary">Sign Up</a>
           </p>
