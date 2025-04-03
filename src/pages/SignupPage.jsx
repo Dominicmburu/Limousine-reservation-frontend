@@ -51,9 +51,8 @@ const SignupPage = () => {
           <h2 className="text-3xl font-bold mb-6 text-center">Sign Up</h2>
           {message.text && (
             <p
-              className={`text-center mb-4 ${
-                message.type === 'success' ? 'text-green-500' : 'text-red-500'
-              }`}
+              className={`text-center mb-4 ${message.type === 'success' ? 'text-green-500' : 'text-red-500'
+                }`}
             >
               {message.text}
             </p>
@@ -105,7 +104,13 @@ const SignupPage = () => {
             Sign Up
           </button>
           <p className="mt-4 text-center">
-            Already have an account? <a href="/login" className="text-primary">Login</a>
+            Already have an account?{' '}
+            <span
+              className="text-primary cursor-pointer underline"
+              onClick={() => navigate('/login')}
+            >
+              Login
+            </span>
           </p>
         </form>
       </section>
