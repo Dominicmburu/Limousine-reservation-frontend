@@ -119,7 +119,7 @@ const LoginPage = () => {
           {/* CAPTCHA Component (Optional) */}
           <div className="mb-4">
             <ReCAPTCHA
-              sitekey="6Le29AcrAAAAAICMMJssg7LHf3SdhFna0x7T3awp"  // Replace with your reCAPTCHA site key
+              sitekey="6Le29AcrAAAAAICMMJssg7LHf3SdhFna0x7T3awp"
               onChange={handleCaptchaChange}
             />
             <p className="text-sm text-gray-600">Complete CAPTCHA to verify you're human</p>
@@ -143,8 +143,16 @@ const LoginPage = () => {
           </button>
 
           <p className="mt-4 text-center">
-            Don't have an account? <a href="/signup" className="text-primary">Sign Up</a>
+            Don't have an account?{' '}
+            <span
+              className="text-primary cursor-pointer underline"
+              onClick={() => navigate('/signup')}
+            >
+              Sign Up
+            </span>
           </p>
+
+
         </form>
       </section>
       <Footer />
