@@ -2,8 +2,8 @@ import React from 'react';
 
 const Recommendations = ({ history = [] }) => {
   const suggestedVehicles = history.includes('SUV') 
-    ? ['Luxury Sedan', 'Limousine'] 
-    : ['SUV', 'Compact Car'];
+    ? ['MERCEDES E200', 'Limousine'] 
+    : ['HONGQI HS', 'MERCEDES E200'];
 
   return (
     <section id="recommendations" className="p-8 bg-gray-100">

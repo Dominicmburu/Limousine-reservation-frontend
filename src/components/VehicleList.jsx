@@ -2,15 +2,15 @@ import React from 'react';
 import images from '../assets/images';
 
 const vehicles = [
-  { name: 'Luxury Sedan', image: images.car1, description: 'Comfortable for city rides.' },
-  { name: 'SUV', image: images.car2, description: 'Spacious for family trips.' },
-  { name: 'Limousine', image: images.car3, description: 'Perfect for special events.' },
-  { name: 'Convertible', image: images.car4, description: 'Open-air experience for sunny days.' },
-  { name: 'Sportscar', image: images.car5, description: 'For those who love speed and style.' },
-  { name: 'Van', image: images.car6, description: 'Ideal for group travel and large families.' },
-  { name: 'Executive Sedan', image: images.car7, description: 'Premium comfort for business travelers.' },
-  { name: 'Minivan', image: images.car8, description: 'Spacious and practical for family adventures.' },
-  { name: 'Classic Car', image: images.car9, description: 'Perfect for nostalgic rides and events.' },
+  { name: 'LONDON CAB', image: images.car11, description: 'Comfortable for city rides.' },
+  // { name: 'LONDON CAB', image: images.car12, description: 'Spacious for family trips.' },
+  { name: 'SANTA FE', image: images.car14, description: 'Perfect for special events.' },
+  { name: 'CHAIRMAN VIP', image: images.car17, description: 'Open-air experience for sunny days.' },
+  { name: 'MERCEDES E200', image: images.car2, description: 'For those who love speed and style.' },
+  { name: 'HONGQI HS', image: images.car21, description: 'Ideal for group travel and large families.' },
+  // { name: 'Executive Sedan', image: images.car17, description: 'Premium comfort for business travelers.' },
+  // { name: 'Minivan', image: images.car18, description: 'Spacious and practical for family adventures.' },
+  // { name: 'Classic Car', image: images.car19, description: 'Perfect for nostalgic rides and events.' },
 ];
 
 const VehicleList = () => {
