@@ -304,7 +304,7 @@ const FleetPage = () => {
                           variants={cardVariants}
                           layoutId={`vehicle-card-${vehicle.id}`}
                           className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                          style={{ maxWidth: '250px' }}
+                          style={{ maxWidth: '450px' }}
                         >
                           <div className="relative overflow-hidden">
                             <motion.img
