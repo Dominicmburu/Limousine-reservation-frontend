@@ -293,7 +293,7 @@ const FleetPage = () => {
                   {/* Vehicle Cards Grid with Animation */}
                   {filteredVehicles.length > 0 ? (
                     <motion.div 
-                      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                      className="grid grid-cols-1\2 md:grid-cols-2 lg:grid-cols-3 gap-6"
                       variants={containerVariants}
                       initial="hidden"
                       animate="visible"
@@ -304,6 +304,7 @@ const FleetPage = () => {
                           variants={cardVariants}
                           layoutId={`vehicle-card-${vehicle.id}`}
                           className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                          style={{ maxWidth: '250px' }}
                         >
                           <div className="relative overflow-hidden">
                             <motion.img
