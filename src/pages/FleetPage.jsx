@@ -14,7 +14,7 @@ const FleetPage = () => {
 
   const navigate = useNavigate();
 
-  const categories = ['All', 'Luxury Sedan', 'SUV', 'Limousine', 'Van'];
+  const categories = ['All', 'LONDON CAB', 'SANTA FE', 'CHAIRMAN VIP', 'MERCEDES E200', 'HONGQI HS'];
 
   // Fetch vehicles on component mount
   useEffect(() => {
