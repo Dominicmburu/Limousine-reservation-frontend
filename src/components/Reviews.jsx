@@ -2,12 +2,11 @@ import React from 'react';
 import '../styles/reviews.css';
 
 const reviews = [
-  { name: "John Doe", comment: "The limousine was top-notch. Highly recommend!", rating: 5 },
-  { name: "Emily Clark", comment: "Amazing service and super comfortable rides.", rating: 4.5 },
-  { name: "Michael Johnson", comment: "Professional drivers and clean vehicles.", rating: 4 },
-  { name: "Michael Johnson", comment: "Professional drivers and clean vehicles.", rating: 4 },
-  { name: "Michael Johnson", comment: "Professional drivers and clean vehicles.", rating: 4 },
-  { name: "Michael Johnson", comment: "Professional drivers and clean vehicles.", rating: 4 },
+  { name: "Osama Mansouri", comment: "The limousine was top-notch. Highly recommend!", rating: 5 },
+  { name: "Hamza Al Ali", comment: "Amazing service and super comfortable rides.", rating: 4.5 },
+  { name: "Emad Mansouri", comment: "Professional drivers and clean vehicles.", rating: 4 },
+  { name: "Yahia Sonbaty", comment: "Professional drivers and clean vehicles.", rating: 4 },
+  { name: "Saef Wezri", comment: "Professional drivers and clean vehicles.", rating: 4 },
 ];
 
 const Reviews = () => {

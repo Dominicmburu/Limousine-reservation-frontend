@@ -119,7 +119,8 @@ const LoginPage = () => {
           {/* CAPTCHA Component (Optional) */}
           <div className="mb-4">
             <ReCAPTCHA
-              sitekey="6Le29AcrAAAAAICMMJssg7LHf3SdhFna0x7T3awp"
+              // sitekey="6Le29AcrAAAAAICMMJssg7LHf3SdhFna0x7T3awp"
+              sitekey="6LcFHRQrAAAAABOLVJAtT2MsKfnnadPDBHqacWkN"
               onChange={handleCaptchaChange}
             />
             <p className="text-sm text-gray-600">Complete CAPTCHA to verify you're human</p>

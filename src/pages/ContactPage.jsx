@@ -96,7 +96,7 @@ const ContactPage = () => {
           <div className="map-container" style={{ height: "500px", width: "100%" }}>
             <iframe
               title="Car Locations"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094146!2d144.9631579159045!3d-37.81621797975179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57794f65f24e2ed!2s123%20Luxury%20Lane%2C%20Cityville!5e0!3m2!1sen!2sus!4v1698003438924!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111671.5322877786!2d20.01326540516441!3d32.0886324308765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8e6e0fcf1327d%3A0x54f52c0d92f6f7db!2sBenghazi%2C%20Libya!5e0!3m2!1sen!2sly!4v1712838376373!5m2!1sen!2sly"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -107,7 +107,8 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
-      <Footer/>
+
+      <Footer />
     </div>
   );
 };
